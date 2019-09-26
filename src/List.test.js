@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import List from './List';
+import STORE from './STORE';
+import App from './App';
 import renderer from 'react-test-renderer';
 
 
