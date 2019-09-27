@@ -9,7 +9,11 @@ exports[`renders UI as expected 1`] = `
   >
     delete
   </button>
-  <h3 />
-  <p />
+  <h3>
+    Hello
+  </h3>
+  <p>
+    foo
+  </p>
 </div>
 `;

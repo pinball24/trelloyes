@@ -3,20 +3,21 @@ import Card from './Card.js';
 import './List.css';
 
 function List(props) {
+    console.log(props)
     return (
         <section className="List">
             <header className="List-header">
                 <h2>{props.header}</h2>
             </header>
             <div className="List-cards">
-                {props.cards.map((card) => {
-                    return (
-                        <Card
+                {props.cards.map((card) => 
+                     <Card
                         key={card.id}
                         title={card.title}
                         content={card.content}
-                />              
-                    )}
+                />
+                
+                )}
                 <button
                     type='button'
                     className='List-add-button'
