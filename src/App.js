@@ -44,7 +44,7 @@ class App extends React.Component {
     },
   }
   handleDeleteItem = (itemId) => {
-    const newItems = this.state.lists.cardIds.filter(id => id !==itemId)
+    const newItems = this.state.lists.cardIds.filter(id => id !== itemId)
     console.log(newItems)
   }
 
