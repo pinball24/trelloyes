@@ -13,6 +13,7 @@ function List(props) {
                 {props.cards.map((card) => 
                      <Card
                         onDeleteItem={props.onDeleteItem}
+                        id={card.id}
                         key={card.id}
                         title={card.title}
                         content={card.content}

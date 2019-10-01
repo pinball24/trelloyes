@@ -43,15 +43,14 @@ class App extends React.Component {
       'm': { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' },
     },
   }
-  handleDeleteItem = (item) => {
-    const newItems = this.state.lists.cardIds.filter(id => id !==item)
+  handleDeleteItem = (itemId) => {
+    const newItems = this.state.lists.cardIds.filter(id => id !==itemId)
     console.log(newItems)
   }
 
-  handleAddItem() {
-    console.log('handle add item called')
-  }
-
+  handleAddItem = () => {
+    console.log('clicked add item')
+}
   render() {
     return (
       <main className='App'>
