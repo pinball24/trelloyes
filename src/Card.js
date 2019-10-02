@@ -5,7 +5,7 @@ import './Card.css';
 class Card extends React.Component {
     deleteCard(event) {
         event.preventDefault();
-        this.props.onDeleteItem(this.props.itemId);
+        this.props.onDeleteItem(this.props.itemId, this.props.listId);
     }
     render() {
         return (

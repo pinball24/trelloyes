@@ -3,7 +3,7 @@ import Card from './Card.js';
 import './List.css';
 
 function List(props) {
-    console.log(props)
+
     return (
         <section className="List">
             <header className="List-header">
@@ -13,6 +13,7 @@ function List(props) {
                 {props.cards.map((card) => 
                      <Card
                         onDeleteItem={props.onDeleteItem}
+                        listId={props.listId}
                         itemId={card.id}
                         key={card.id}
                         title={card.title}
