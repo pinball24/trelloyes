@@ -5,7 +5,7 @@ import './Card.css';
 class Card extends React.Component {
     deleteCard(event) {
         event.preventDefault();
-        props.onDeleteItem(props.itemId);
+        this.props.onDeleteItem(this.props.itemId);
     }
     render() {
         return (
@@ -15,11 +15,11 @@ class Card extends React.Component {
                     type="button">
                     delete
                 </button>
-                <h3>{props.title}</h3>
-                <p>{props.content}</p>
+                <h3>{this.props.title}</h3>
+                <p>{this.props.content}</p>
             </div>
         )
     }
 }
 
-export default Card
+export default Card;
